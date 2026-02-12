@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Hug Day PANDULUUUU 🫂</title>
+
+<style>
+body{
+margin:0;
+background:black;
+font-family: Arial, sans-serif;
+overflow:hidden;
+color:white;
+text-align:center;
+}
+
+/* Envelope */
+.envelope{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:250px;
+height:160px;
+background:#c0392b;
+cursor:pointer;
+border-radius:10px;
+box-shadow:0 0 25px red;
+transition:1s;
+}
+
+.envelope:before{
+content:"";
+position:absolute;
+top:-80px;
+left:0;
+width:0;
+height:0;
+border-left:125px solid transparent;
+border-right:125px solid transparent;
+border-bottom:80px solid #e74c3c;
+transition:1s;
+}
+
+.open{
+transform:translate(-50%,-50%) scale(0);
+opacity:0;
+}
+
+/* Letter */
+.letter{
+display:none;
+position:absolute;
+top:5%;
+left:50%;
+transform:translateX(-50%);
+width:90%;
+max-height:90%;
+overflow-y:auto;
+background:white;
+color:black;
+padding:20px;
+border-radius:15px;
+box-shadow:0 0 30px pink;
+animation:fadeIn 2s forwards;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateX(-50%) scale(0.8);}
+to{opacity:1;transform:translateX(-50%) scale(1);}
+}
+
+/* Photos */
+.photo{
+width:90%;
+border-radius:15px;
+margin-top:15px;
+box-shadow:0 0 20px red;
+}
+
+/* Floating hearts */
+.heart{
+position:absolute;
+color:red;
+font-size:20px;
+animation:floatUp 6s linear infinite;
+}
+
+@keyframes floatUp{
+0%{transform:translateY(100vh);opacity:1;}
+100%{transform:translateY(-10vh);opacity:0;}
+}
+
+/* Floating hugs */
+.hug{
+position:absolute;
+font-size:22px;
+animation:floatSide 7s linear infinite;
+}
+
+@keyframes floatSide{
+0%{transform:translateX(-10vw);opacity:1;}
+100%{transform:translateX(110vw);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="envelope" onclick="openLetter()" id="env"></div>
+
+<div class="letter" id="letter">
+
+<h2>Happy Hug Day PANDULUU🫂❤️</h2>
+
+<p>First hug..🫂<br><br>
+  Kanna Niku mana first hug gurthundha..!? Adhe SLV upstairs dhegara jarigindhi...
+  Naku mana first hug inka gurthundhi🥹 adhi ninna jariginattu anipistundi💯
+  Nuvvu nannu hug cheskoni, naa thala meedha ichina aa soft kiss...
+  Naa life lo aa moment oka magical pause laga undi ✨
+</p>
+
+<p>
+  Aroju nenu emi cheppaledhu kani lopala first time calm ga feel ayyanu 😌
+  Nee chethullo chala safe ga anipinchindi...
+  Nee hug naa favorite place ☺️
+  Akkada stress undadu... overthinking undadu..
+  Only peaceful heartbeat untundi 💓
+</p>
+
+<p>Life heavy ga anipinchinappudu, 
+  naaku advices,costly gifts,shoppings avasaram ledu…💯
+  nee chethulltho okasari hug chesukunte chalu..🥹🫴🏻
+  Endukante konni saarlu love ki explanations avasaram undadu
+  Bayam ki,Kastaalaki,solutions avasaramledhu..❌
+  Just “Nenu ikkade unna, neekosam🫵🏻” ani cheppe aa closeness chalu..🤌🏻
+</p>
+
+<p>Hug ante comfort✅
+  Hug ante support✅
+  Hug ante “nuvvu ontari kadhu,niku ee prblm vachina kooda,
+  nitho ila eppatiki dhegara gaane untanu,Nuvu bayapadaku,
+  Nenu niku matrame sontham,oye vintunava..!? Artham avthundha..!? 
+  Na life anthaa nithone brathikestha ani chepthuna,inka gattiga cheppagalanu
+  koodaa..🥹Elanti toughtest situation vachina face Chesthanu kaani,
+  Ninnu matram vadhili vellanu,Vellalenu,Artham avthundhaa..!?
+  Nannu nammu” ani cheppe silent assurance💯😫🫀🤌🏻
+  Nenu niku aa guarantee,aa assurance eppatiki isthaa 
+  niku matrame isthanu 🫂♾️</p>
+
+<p>Endukante hug ante feeling…Romance kadhu❌
+  oka magical connection between us🤍ani nammutha kabati...😌
+  Naku Ee connection eppatiki kavali 😭🫂🫴🏻♾️❤️‍🔥 
+  Naku telsu,Nenu nammuthuna,Naku ee connection 
+  permanent ga untundhi ani✅🥹🤌🏻🫂Im very very sry for my mistakes,
+  Kopam lo nuvvu,Nenu ,idharam chala matalu hurt ayyela matladukunam
+  andhulo edhaina hurt ayinte,heart ki theeskoku, please 🙏🏻 😭 
+  nuvvu enthala hurt ayyavo,Nenu anthala hurt ayya...But
+  mana love mundhu,mana journey mundhu,Ee kopalu entha cheppu..!?
+  Naku baga bhuddhi vachindhi 🥹 Im regreting for this,And I can't take
+  this distance between us😭🥹Chala narakam kanapadthundhi 😫 Im genuinely 
+  sry for everything my love 💕 I need u back as my husband & kid too❤️‍🔥
+</p>
+
+<p>
+Happy Hug Day Bangaaru🥹🫂<br><br>
+Yours all time Huggie 🫂<br>
+Pandu DivyaSree Gaikwad ♾️🫀
+</p>
+
+<img src="photo1.jpg" class="photo">
+<img src="photo2.jpg" class="photo">
+<img src="photo3.jpg" class="photo">
+<img src="photo4.jpg" class="photo">
+
+</div>
+<audio id="music" src="song.mp3" loop preload="auto"></audio>
+
+<script>
+function openLetter(){
+document.getElementById("env").classList.add("open");
+setTimeout(()=>{
+document.getElementById("letter").style.display="block";
+document.getElementById("music").play();
+},1000);
+}
+
+/* Floating hearts */
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),6000);
+},500);
+
+/* Floating hugs */
+setInterval(()=>{
+let hug=document.createElement("div");
+hug.className="hug";
+hug.innerHTML="🫂";
+hug.style.top=Math.random()*100+"vh";
+document.body.appendChild(hug);
+setTimeout(()=>hug.remove(),7000);
+},1500);
+</script>
+
+</body>
+</html>
